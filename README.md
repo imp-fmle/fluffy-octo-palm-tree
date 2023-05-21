@@ -189,6 +189,6 @@ float32 angular_vel
   ```
 </details>
 
-![image](screenshots/wall_1.png)
+![image](screenshots/wall_1.jpg)
 
 
