@@ -1,5 +1,7 @@
 # fluffy-octo-palm-tree
 
+![image](screenshots/wall_1.jpg)
+
 cd ~/catkin_ws
 source ./devel/setup.bash
 
@@ -189,6 +191,6 @@ float32 angular_vel
   ```
 </details>
 
-![image](screenshots/wall_1.jpg)
+
 
 
