@@ -3,7 +3,6 @@
 ![image](screenshots/wall_1.jpg)
 
 cd ~/catkin_ws
-
 source ./devel/setup.bash
 
 ![image](screenshots/Model.jpeg)
