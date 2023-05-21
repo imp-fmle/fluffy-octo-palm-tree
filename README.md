@@ -23,7 +23,8 @@ float32 angular_vel
 # Subscriber
 
 <details>
-  <summary>Toggle contents of talker_custom.py `code`</summary>
+  <summary>Toggle contents of talker_custom.py </summary>
+  
   ```python
   #!/usr/bin/env python3
 
@@ -101,7 +102,7 @@ float32 angular_vel
       try:
           talker()
       except rospy.ROSInterruptException: pass
-   ```   
+  ```
 </details>
 
   
