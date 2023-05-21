@@ -1,6 +1,8 @@
 # fluffy-octo-palm-tree
 
 ![image](screenshots/wall_1.jpg)
+(* get a closer look *)
+
 
   
  # Package overview
