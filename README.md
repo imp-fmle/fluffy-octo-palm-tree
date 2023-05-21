@@ -261,6 +261,8 @@ roslaunch pr_5 rviz.launch
 
 ![image](screenshots/rViz_brick.png)
 
+
+
 # Итог
 
 Имеем: 
