@@ -12,6 +12,7 @@
 
 Отсюда видно, что общение происходит между узлами talker и listener. Первый - генерирует сообшение, в котором содержатся угловая и линейная скорости, имитируя робота. Второй получает данные параметры и вычисляет угловые скорости колёс на основании которых строятся показания энкодеров, с помощью котрых вычисляется угол поворота и линейная скорость платформы, преобразуемые в координаты.
 
+### talker
 <details>
   <summary>Toggle contents of talker_custom.py </summary>
   
@@ -95,7 +96,7 @@
   ```
 </details>
 
-
+### listener 
 <details>
   <summary>Toggle contents of listener_custom.py </summary>
   
@@ -177,40 +178,56 @@
   ```
 </details>
 
-
-cd ~/catkin_ws
-
-source ./devel/setup.bash
-
-
-1. roscore
-
-2. rosrun pr_5 talker_custom.py
-
-3. rosrun pr_5 listener_custom.py
-
-4. roslaunch pr_5 rviz.launch
-
-![image](screenshots/Prerequirements.png)
-## msg_file
+### msg_file
 ```python
 string name
 float32 time
 float32 linear_vel
 float32 angular_vel
 ```
+
+## Руководство
+
+Для начала необходимо перейти в директорию репозитория
+
+```
+$ cd ~/catkin_ws
+```
+Всего нам потребуется 4 терминала: 
+
+1. В первом - необходимо запустить ядро ROS
+```
+$ roscore
+```
+2. Во втором - rosrun pr_5 talker_custom.py - запуск узла силмуляции
+```
+$ rosrun pr_5 talker_custom.py
+```
+3. В третьем - rosrun pr_5 listener_custom.py - запуск узла получателя-обработчика
+```
+$ rosrun pr_5 listener_custom.py
+```
+4. В четвёртом - roslaunch pr_5 rviz.launch - запуск среды визуализации
+```
+$ roslaunch pr_5 rviz.launch
+```
+
+В каждом из терминалов выполнить кооманду source
+```
+$ source ./devel/setup.bash
+```
+Затем:
+```
+$ catkin_make
+```
+
+![image](screenshots/Prerequirements.png)
+
 ![image](screenshots/Roscore.png)
 ![image](screenshots/Publisher_listener.png)
 ![image](screenshots/Movement.png)
 ![image](screenshots/rViz.png)
 ![image](screenshots/rViz_brick.png)
-# Talker
-
-
-  
-# Listener
-
-
 
 
 
