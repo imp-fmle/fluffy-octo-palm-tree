@@ -6,7 +6,7 @@ cd ~/catkin_ws
 
 source ./devel/setup.bash
 
-
+![image](screenshots/Model.jpeg)
 1. roscore
 
 2. rosrun pr_5 talker_custom.py
