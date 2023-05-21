@@ -1,5 +1,17 @@
 # fluffy-octo-palm-tree
 
+cd ~/catkin_ws
+source ./devel/setup.bash
+
+#1
+roscore
+#2
+rosrun pr_5 talker_custom.py
+#3
+rosrun pr_5 listener_custom.py
+#4
+roslaunch pr_5 rviz.launch
+
 ## msg_file
 ```python
 string name
