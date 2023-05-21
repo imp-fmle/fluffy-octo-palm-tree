@@ -14,6 +14,7 @@ rosrun pr_5 listener_custom.py
 #4
 roslaunch pr_5 rviz.launch
 
+![image](screenshots/Prerequirements.jpg)
 ## msg_file
 ```python
 string name
@@ -21,7 +22,11 @@ float32 time
 float32 linear_vel
 float32 angular_vel
 ```
-
+![image](screenshots/Roscore.jpg)
+![image](screenshots/Publisher_listener.jpg)
+![image](screenshots/Movement.jpg)
+![image](screenshots/rViz.jpg)
+![image](screenshots/rViz_brick.jpg)
 # Talker
 
 <details>
