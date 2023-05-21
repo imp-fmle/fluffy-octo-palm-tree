@@ -102,8 +102,9 @@ if __name__ == '__main__':
         talker()
     except rospy.ROSInterruptException: pass
  ```   
- <!details>
+ </details>
 
+  
 # Publisher
 ```python
 #!/usr/bin/env python
