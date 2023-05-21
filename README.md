@@ -1,5 +1,13 @@
 # fluffy-octo-palm-tree
 
+Павлов          0.5
+Назаренко       0.1
+Голубятников    0.1
+
+Алымова         0.2
+Буравцова       0.1  
+Aндронова
+
 ![image](screenshots/wall_1.jpg)
 (* get a closer look *)
 
@@ -203,6 +211,11 @@ float32 angular_vel
 
 ## Руководство
 
+
+```
+$ cd ~/catkin_ws/src
+$ git clone https://github.com/imp-fmle/fluffy-octo-palm-tree)
+```
 Для начала необходимо перейти в директорию репозитория
 
 ```
