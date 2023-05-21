@@ -10,33 +10,7 @@
   
 ![image](screenshots/Chat_model.jpeg)
 
-cd ~/catkin_ws
-
-source ./devel/setup.bash
-
-
-1. roscore
-
-2. rosrun pr_5 talker_custom.py
-
-3. rosrun pr_5 listener_custom.py
-
-4. roslaunch pr_5 rviz.launch
-
-![image](screenshots/Prerequirements.png)
-## msg_file
-```python
-string name
-float32 time
-float32 linear_vel
-float32 angular_vel
-```
-![image](screenshots/Roscore.png)
-![image](screenshots/Publisher_listener.png)
-![image](screenshots/Movement.png)
-![image](screenshots/rViz.png)
-![image](screenshots/rViz_brick.png)
-# Talker
+Отсюда видно, что общение происходит между узлами talker и listener. Первый - генерирует сообшение, в котором содержатся угловая и линейная скорости, имитируя робота. Второй получает данные параметры и вычисляет угловые скорости колёс на основании которых строятся показания энкодеров, с помощью котрых вычисляется угол поворота и линейная скорость платформы, преобразуемые в координаты.
 
 <details>
   <summary>Toggle contents of talker_custom.py </summary>
@@ -121,8 +95,6 @@ float32 angular_vel
   ```
 </details>
 
-  
-# Listener
 
 <details>
   <summary>Toggle contents of listener_custom.py </summary>
@@ -204,6 +176,41 @@ float32 angular_vel
       listener()
   ```
 </details>
+
+
+cd ~/catkin_ws
+
+source ./devel/setup.bash
+
+
+1. roscore
+
+2. rosrun pr_5 talker_custom.py
+
+3. rosrun pr_5 listener_custom.py
+
+4. roslaunch pr_5 rviz.launch
+
+![image](screenshots/Prerequirements.png)
+## msg_file
+```python
+string name
+float32 time
+float32 linear_vel
+float32 angular_vel
+```
+![image](screenshots/Roscore.png)
+![image](screenshots/Publisher_listener.png)
+![image](screenshots/Movement.png)
+![image](screenshots/rViz.png)
+![image](screenshots/rViz_brick.png)
+# Talker
+
+
+  
+# Listener
+
+
 
 
 
