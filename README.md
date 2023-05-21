@@ -3,9 +3,10 @@
 ![image](screenshots/wall_1.jpg)
 
 cd ~/catkin_ws
+
 source ./devel/setup.bash
 
-![image](screenshots/Model.jpeg)
+![image](screenshots/Chat_model.jpeg)
 1. roscore
 
 2. rosrun pr_5 talker_custom.py
