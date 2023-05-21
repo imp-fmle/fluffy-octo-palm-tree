@@ -93,11 +93,9 @@ if __name__ == '__main__':
 ```python
 #!/usr/bin/env python
 
-import control
 import rospy
 import math
 from pr_5.msg import Robot_systems
-#from geometry_msgs.msg import Twist
 
 encr = 0
 encl = 0
@@ -110,17 +108,9 @@ t_g = 0
 
 def wspeed(w_l, w_r):
     global t_g
-    k = 1
-    T = 1.5
     N = 4096
-    W = control.tf(k, [T, 1])
-    system = control.LinearIOSystem(W)
-    print("first")
-    #магия сау
     t = float(rospy.get_time())
-    #a, w, demo_x = control.input_output_response(system, [t_g, t], [w_g, w_wheel], return_x=True)
     dt = t - t_g
-    print(t,t_g,dt)
     #вычисление показаний энкодера
     dencl = int(w_l * dt * N / (2 * 3.1415))
     dencr = int(w_r * dt * N / (2 * 3.1415))
